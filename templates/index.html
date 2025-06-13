@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>🧾 OCR Text Extractor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>📤 Upload Image</h2>
+    <input type="file" id="imageInput" accept="image/*" />
+    <br>
+    <button onclick="extractText()">🧠 Extract Text</button>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
